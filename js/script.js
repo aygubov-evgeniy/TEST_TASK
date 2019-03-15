@@ -7,6 +7,7 @@ var orderApp = (function() {
   return{
     init: function() {
       this.countProducts();
+      this.filterProducts();
     },
 
     countProducts: function() {
@@ -31,6 +32,14 @@ var orderApp = (function() {
           }
         });
       });
+    },
+
+    filterProducts: function() {
+      var fieldsControl = document.querySelectorAll('.select-control');
+
+      fieldsControl.forEach(function(item) {
+        
+      })
     }
   }
 }());
