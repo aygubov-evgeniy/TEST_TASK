@@ -34,7 +34,7 @@
             <div class="filter-box">
                 <div class="select-box">
                     <label class="filter-label">Категория</label>
-                    <select class="select-control">
+                    <select class="select-control" data-filter="filter-cat">
                         <option value="0">Все</option>
                         <option value="1">Завтраки</option>
                         <option  value="2">Первые блюда</option>
@@ -43,7 +43,7 @@
                 </div><!-- /.select-box -->
                 <div class="price-select-box">
                     <label class="filter-label">Цена</label>
-                    <select class="select-control">
+                    <select class="select-control" data-filter="filter-price">
                         <option value="0">Все</option>
                         <option value="30">До 30 грн</option>
                         <option value="50">До 50 грн</option>
@@ -243,6 +243,14 @@
         </div>
     </footer>
 </div><!-- /.app-container -->
+
+<div class="order-modal">
+  <form onsubmit="return false" class="order-modal__form">
+    <input type="text" class="order-modal__field" placeholder="Имя">
+    <input type="text" class="order-modal__field" placeholder="Email">
+    <button class="order-modal__btn">Отправить</button>
+  </form>
+</div>
 
 
 <script src="js/script.js"></script>
