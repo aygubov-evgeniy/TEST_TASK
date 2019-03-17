@@ -95,8 +95,8 @@ var orderApp = (function() {
       });
 
       btnModalForm.addEventListener('click', function() {
-        modalFields.forEach(function(el) {
-          el.value !== '' ? state.validateFields = true : state.validateFields = false;
+        state.validateFields = [...modalFields].every(function(el) {
+          return el.value !== '';
         });
 
         if( !state.validateFields ) {
