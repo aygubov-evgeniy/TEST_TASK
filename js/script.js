@@ -103,11 +103,7 @@ var orderApp = (function() {
           alert('Заполните все поля!');
         }else {
           alert('Спасибо за покупки!');
-          modal.classList.remove('show');
-          state.totalSum = 0;
-          state.totalPrice = 0;
-          document.querySelector('#totalSum').innerHTML = 'XXX';
-          document.querySelector('#totalPrice').innerHTML = 'XXX';
+          location.href=location.href;
         }
       });
     }
